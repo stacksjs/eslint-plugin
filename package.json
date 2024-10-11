@@ -52,15 +52,15 @@
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
     "@eslint/markdown": "^6.2.0",
+    "@stacksjs/path": "^0.65.0",
     "@stylistic/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/eslint-plugin": "^8.8.1",
-    "@typescript-eslint/parser": "^8.8.1",
     "@types/bun": "^1.1.11",
     "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
     "@vitest/eslint-plugin": "^1.1.7",
     "bumpp": "^9.7.1",
     "changelogen": "^0.5.7",
-    "unbuild": "2.0.0",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-flat-config-utils": "^0.4.0",
     "eslint-merge-processors": "^0.1.0",
@@ -80,6 +80,7 @@
     "eslint-plugin-yml": "^1.14.0",
     "eslint-processor-vue-blocks": "^0.1.2",
     "eslint-vitest-rule-tester": "^0.6.1",
+    "unbuild": "2.0.0",
     "vitest": "^2.1.2",
     "vue-eslint-parser": "^9.4.3"
   }
