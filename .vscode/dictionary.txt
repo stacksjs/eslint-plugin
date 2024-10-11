@@ -1,10 +1,12 @@
 antfu
+attributify
 biomejs
 booleanish
 bumpp
 bunx
 changelogen
 changelogithub
+classname
 codecov
 commitlint
 commitlintrc
@@ -27,7 +29,10 @@ socio
 Solana
 Spatie
 stacksjs
+synckit
+TSES
 typecheck
+unocss
 unplugin
 unref
 upath
