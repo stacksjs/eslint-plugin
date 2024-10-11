@@ -1,4 +1,16 @@
 
+## v0.1.2...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.2...main)
+
+### 🏡 Chore
+
+- Wip ([bcb2b5a](https://github.com/stacksjs/eslint-plugin/commit/bcb2b5a))
+
+### ❤️ Contributors
+
+- Chris <chrisbreuer93@gmail.com>
+
 ## v0.1.1...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.1...main)
