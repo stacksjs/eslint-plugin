@@ -13,7 +13,7 @@ process.env.ESLINT ||= 'true'
 
 async function _getGenerator(configPath?: string) {
   const { config, sources } = await loadConfig(
-    path.uiPath(),
+    path.uiPath('src/'),
     configPath,
   )
   if (!sources.length)
