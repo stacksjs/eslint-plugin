@@ -1,4 +1,16 @@
 
+## v0.1.1...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.1...main)
+
+### 🏡 Chore
+
+- Wip ([dab1753](https://github.com/stacksjs/eslint-plugin/commit/dab1753))
+
+### ❤️ Contributors
+
+- Chris <chrisbreuer93@gmail.com>
+
 ## v0.1.0...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.0...main)
