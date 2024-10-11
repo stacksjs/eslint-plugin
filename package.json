@@ -1,7 +1,7 @@
 {
   "name": "@stacksjs/eslint-plugin",
   "type": "module",
-  "version": "0.63.4-stacks.0",
+  "version": "0.0.0",
   "description": "The Stacks ESLint plugin",
   "license": "MIT",
   "funding": "https://github.com/sponsors/chrisbbreuer",
