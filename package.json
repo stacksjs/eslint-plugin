@@ -78,7 +78,7 @@
     "eslint-plugin-unused-imports": "^4.1.4",
     "eslint-plugin-vue": "^9.29.0",
     "eslint-plugin-yml": "^1.14.0",
-    "eslint-processor-vue-blocks": "^0.1.2",
+    "eslint-processor-vue-blocks": "^1.0.0",
     "eslint-vitest-rule-tester": "^0.6.1",
     "unbuild": "2.0.0",
     "vitest": "^2.1.2",
