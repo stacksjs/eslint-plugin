@@ -1,4 +1,17 @@
 
+## v0.1.3...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.3...main)
+
+### 🏡 Chore
+
+- Adjust readme ([6a644b0](https://github.com/stacksjs/eslint-plugin/commit/6a644b0))
+- Minor updates ([00a5a70](https://github.com/stacksjs/eslint-plugin/commit/00a5a70))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](http://github.com/chrisbbreuer))
+
 ## v0.1.2...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.2...main)
