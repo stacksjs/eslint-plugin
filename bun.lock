@@ -25,7 +25,7 @@
         "bumpp": "^9.10.0",
         "changelogen": "^0.5.7",
         "eslint-config-flat-gitignore": "^1.0.0",
-        "eslint-flat-config-utils": "^0.4.0",
+        "eslint-flat-config-utils": "^1.0.0",
         "eslint-merge-processors": "^1.0.0",
         "eslint-plugin-antfu": "^2.7.0",
         "eslint-plugin-command": "^2.1.0",
@@ -1260,7 +1260,7 @@
 
     "eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
 
-    "eslint-flat-config-utils": ["eslint-flat-config-utils@0.4.0", "", { "dependencies": { "pathe": "^1.1.2" } }, "sha512-kfd5kQZC+BMO0YwTol6zxjKX1zAsk8JfSAopbKjKqmENTJcew+yBejuvccAg37cvOrN0Mh+DVbeyznuNWEjt4A=="],
+    "eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
 
     "eslint-import-resolver-node": ["eslint-import-resolver-node@0.3.9", "", { "dependencies": { "debug": "^3.2.7", "is-core-module": "^2.13.0", "resolve": "^1.22.4" } }, "sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g=="],
 
@@ -2626,8 +2626,6 @@
 
     "@stacksjs/env/@stacksjs/validation": ["@stacksjs/validation@0.67.0", "", { "dependencies": { "@stacksjs/strings": "0.67.0", "@stacksjs/types": "0.67.0", "@vinejs/vine": "^2.1.0" } }, "sha512-W+wOze8vcMCq5z+xEj7qDmdUiv7pnSfnt1yKZJEDYocCwSOZseDKK56bik6c5ETA78sy6EZEtd68xFS0Lei3wg=="],
 
-    "@stacksjs/eslint-config/eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
-
     "@stacksjs/logging/@stacksjs/path": ["@stacksjs/path@0.67.0", "", { "dependencies": { "@stacksjs/logging": "0.67.0", "@stacksjs/validation": "0.67.0" } }, "sha512-KbiUmp3NgCbsZPtZVRdAHammInl487bdHMf6PJraWMUaYh2yAeQtxE+ZHMD8Y9Mh4jp3evkM2XLvmM2HtOTbNw=="],
 
     "@stacksjs/logging/@stacksjs/validation": ["@stacksjs/validation@0.67.0", "", { "dependencies": { "@stacksjs/strings": "0.67.0", "@stacksjs/types": "0.67.0", "@vinejs/vine": "^2.1.0" } }, "sha512-W+wOze8vcMCq5z+xEj7qDmdUiv7pnSfnt1yKZJEDYocCwSOZseDKK56bik6c5ETA78sy6EZEtd68xFS0Lei3wg=="],
@@ -2681,6 +2679,8 @@
     "eslint/eslint-scope": ["eslint-scope@8.2.0", "", { "dependencies": { "esrecurse": "^4.3.0", "estraverse": "^5.2.0" } }, "sha512-PHlWUfG6lvPc3yvP5A4PNyBL1W8fkDUccmI21JUu/+GKZBoH/W5u6usENXUrWFRsyoW5ACUjFGgAFQp5gUlb/A=="],
 
     "eslint/minimatch": ["minimatch@3.1.2", "", { "dependencies": { "brace-expansion": "^1.1.7" } }, "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw=="],
+
+    "eslint-flat-config-utils/pathe": ["pathe@2.0.1", "", {}, "sha512-6jpjMpOth5S9ITVu5clZ7NOgHNsv5vRQdheL9ztp2vZmM6fRbLvyua1tiBIL4lk8SAe3ARzeXEly6siXCjDHDw=="],
 
     "eslint-import-resolver-node/debug": ["debug@3.2.7", "", { "dependencies": { "ms": "^2.1.1" } }, "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ=="],
 
@@ -2893,8 +2893,6 @@
     "@stacksjs/dns/@stacksjs/path/@stacksjs/logging": ["@stacksjs/logging@0.67.0", "", { "dependencies": { "@stacksjs/cli": "0.67.0", "@stacksjs/config": "0.67.0", "@stacksjs/error-handling": "0.67.0", "@stacksjs/path": "0.67.0", "@stacksjs/storage": "0.67.0", "@stacksjs/validation": "0.67.0" } }, "sha512-Hfg6dsPJwUx0MZEHnLlBSJWVa0BRJMFwdz8uvofke+oMjXCoC5q+DL7RQG7WCjzS3CKD+pgR3qnXMXnpBpKj8g=="],
 
     "@stacksjs/dns/@stacksjs/path/@stacksjs/validation": ["@stacksjs/validation@0.67.0", "", { "dependencies": { "@stacksjs/strings": "0.67.0", "@stacksjs/types": "0.67.0", "@vinejs/vine": "^2.1.0" } }, "sha512-W+wOze8vcMCq5z+xEj7qDmdUiv7pnSfnt1yKZJEDYocCwSOZseDKK56bik6c5ETA78sy6EZEtd68xFS0Lei3wg=="],
-
-    "@stacksjs/eslint-config/eslint-flat-config-utils/pathe": ["pathe@2.0.1", "", {}, "sha512-6jpjMpOth5S9ITVu5clZ7NOgHNsv5vRQdheL9ztp2vZmM6fRbLvyua1tiBIL4lk8SAe3ARzeXEly6siXCjDHDw=="],
 
     "@stacksjs/logging/@stacksjs/path/@stacksjs/logging": ["@stacksjs/logging@0.67.0", "", { "dependencies": { "@stacksjs/cli": "0.67.0", "@stacksjs/config": "0.67.0", "@stacksjs/error-handling": "0.67.0", "@stacksjs/path": "0.67.0", "@stacksjs/storage": "0.67.0", "@stacksjs/validation": "0.67.0" } }, "sha512-Hfg6dsPJwUx0MZEHnLlBSJWVa0BRJMFwdz8uvofke+oMjXCoC5q+DL7RQG7WCjzS3CKD+pgR3qnXMXnpBpKj8g=="],
 
