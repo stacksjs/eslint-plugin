@@ -24,7 +24,7 @@
         "@vitest/eslint-plugin": "^1.1.25",
         "bumpp": "^9.10.0",
         "changelogen": "^0.5.7",
-        "eslint-config-flat-gitignore": "^0.3.0",
+        "eslint-config-flat-gitignore": "^1.0.0",
         "eslint-flat-config-utils": "^0.4.0",
         "eslint-merge-processors": "^0.1.0",
         "eslint-plugin-antfu": "^2.7.0",
@@ -1260,7 +1260,7 @@
 
     "eslint-compat-utils": ["eslint-compat-utils@0.6.4", "", { "dependencies": { "semver": "^7.5.4" }, "peerDependencies": { "eslint": ">=6.0.0" } }, "sha512-/u+GQt8NMfXO8w17QendT4gvO5acfxQsAKirAt0LVxDnr2N8YLCVbregaNc/Yhp7NM128DwCaRvr8PLDfeNkQw=="],
 
-    "eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@0.3.0", "", { "dependencies": { "@eslint/compat": "^1.1.1", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-0Ndxo4qGhcewjTzw52TK06Mc00aDtHNTdeeW2JfONgDcLkRO/n/BteMRzNVpLQYxdCC/dFEilfM9fjjpGIJ9Og=="],
+    "eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
 
     "eslint-flat-config-utils": ["eslint-flat-config-utils@0.4.0", "", { "dependencies": { "pathe": "^1.1.2" } }, "sha512-kfd5kQZC+BMO0YwTol6zxjKX1zAsk8JfSAopbKjKqmENTJcew+yBejuvccAg37cvOrN0Mh+DVbeyznuNWEjt4A=="],
 
@@ -2635,8 +2635,6 @@
     "@stacksjs/dns/@stacksjs/path": ["@stacksjs/path@0.67.0", "", { "dependencies": { "@stacksjs/logging": "0.67.0", "@stacksjs/validation": "0.67.0" } }, "sha512-KbiUmp3NgCbsZPtZVRdAHammInl487bdHMf6PJraWMUaYh2yAeQtxE+ZHMD8Y9Mh4jp3evkM2XLvmM2HtOTbNw=="],
 
     "@stacksjs/env/@stacksjs/validation": ["@stacksjs/validation@0.67.0", "", { "dependencies": { "@stacksjs/strings": "0.67.0", "@stacksjs/types": "0.67.0", "@vinejs/vine": "^2.1.0" } }, "sha512-W+wOze8vcMCq5z+xEj7qDmdUiv7pnSfnt1yKZJEDYocCwSOZseDKK56bik6c5ETA78sy6EZEtd68xFS0Lei3wg=="],
-
-    "@stacksjs/eslint-config/eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
 
     "@stacksjs/eslint-config/eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
 
