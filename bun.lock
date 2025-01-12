@@ -26,7 +26,7 @@
         "changelogen": "^0.5.7",
         "eslint-config-flat-gitignore": "^0.3.0",
         "eslint-flat-config-utils": "^0.4.0",
-        "eslint-merge-processors": "^0.1.0",
+        "eslint-merge-processors": "^1.0.0",
         "eslint-plugin-antfu": "^2.7.0",
         "eslint-plugin-command": "^2.1.0",
         "eslint-plugin-import-x": "^4.6.1",
@@ -1268,7 +1268,7 @@
 
     "eslint-json-compat-utils": ["eslint-json-compat-utils@0.2.1", "", { "dependencies": { "esquery": "^1.6.0" }, "peerDependencies": { "eslint": "*", "jsonc-eslint-parser": "^2.4.0" } }, "sha512-YzEodbDyW8DX8bImKhAcCeu/L31Dd/70Bidx2Qex9OFUtgzXLqtfWL4Hr5fM/aCCB8QUZLuJur0S9k6UfgFkfg=="],
 
-    "eslint-merge-processors": ["eslint-merge-processors@0.1.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-IvRXXtEajLeyssvW4wJcZ2etxkR9mUf4zpNwgI+m/Uac9RfXHskuJefkHUcawVzePnd6xp24enp5jfgdHzjRdQ=="],
+    "eslint-merge-processors": ["eslint-merge-processors@1.0.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-4GybyHmhXtT7/W8RAouQzNM0791sYasJCTYHIAYjuiJvbNFY0jMKkoESREhX+mjX37dxiN6v4EqhZ1nc0tJF7A=="],
 
     "eslint-plugin-antfu": ["eslint-plugin-antfu@2.7.0", "", { "dependencies": { "@antfu/utils": "^0.7.10" }, "peerDependencies": { "eslint": "*" } }, "sha512-gZM3jq3ouqaoHmUNszb1Zo2Ux7RckSvkGksjLWz9ipBYGSv1EwwBETN6AdiUXn+RpVHXTbEMPAPlXJazcA6+iA=="],
 
@@ -2639,8 +2639,6 @@
     "@stacksjs/eslint-config/eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
 
     "@stacksjs/eslint-config/eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
-
-    "@stacksjs/eslint-config/eslint-merge-processors": ["eslint-merge-processors@1.0.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-4GybyHmhXtT7/W8RAouQzNM0791sYasJCTYHIAYjuiJvbNFY0jMKkoESREhX+mjX37dxiN6v4EqhZ1nc0tJF7A=="],
 
     "@stacksjs/eslint-config/eslint-plugin-perfectionist": ["eslint-plugin-perfectionist@4.6.0", "", { "dependencies": { "@typescript-eslint/types": "^8.19.0", "@typescript-eslint/utils": "^8.19.0", "natural-orderby": "^5.0.0" }, "peerDependencies": { "eslint": ">=8.0.0" } }, "sha512-kOswTebUK0LlYExRwqz7YQtvyTUIRsKfp8XrwBBeHGh2e8MBOS6K+7VvG6HpmNckyKySi1I96uPeAlptMFGcRQ=="],
 
