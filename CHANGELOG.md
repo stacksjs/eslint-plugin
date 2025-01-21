@@ -1,4 +1,16 @@
 
+## v0.1.4...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.4...main)
+
+### 🏡 Chore
+
+- Lint ([11bf491](https://github.com/stacksjs/eslint-plugin/commit/11bf491))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](http://github.com/chrisbbreuer))
+
 ## v0.1.3...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.3...main)
