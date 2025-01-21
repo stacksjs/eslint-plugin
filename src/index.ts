@@ -6,7 +6,7 @@ import './types'
 export default {
   ...plugin,
   configs: {
-    recommended: configsRecommended,
     flat: configsFlat,
+    recommended: configsRecommended,
   },
 }

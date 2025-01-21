@@ -6,19 +6,6 @@ import { createRule, syncAction } from './_'
 import { IGNORE_ATTRIBUTES } from './order-attributify'
 
 export default createRule({
-  name: 'blocklist',
-  meta: {
-    type: 'problem',
-    fixable: 'code',
-    docs: {
-      description: 'Utilities in UnoCSS blocklist',
-    },
-    messages: {
-      'in-blocklist': '\"{{name}}\" is in blocklist{{reason}}',
-    },
-    schema: [],
-  },
-  defaultOptions: [],
   create(context) {
     const checkLiteral = (node: TSESTree.Literal) => {
       if (typeof node.value !== 'string' || !node.value.trim())
@@ -33,12 +20,12 @@ export default createRule({
       )
       blocked.forEach(([name, meta]) => {
         context.report({
-          node,
-          messageId: 'in-blocklist',
           data: {
             name,
             reason: meta?.message ? `: ${meta.message}` : '',
           },
+          messageId: 'in-blocklist',
+          node,
         })
       })
     }
@@ -82,12 +69,12 @@ export default createRule({
           )
           blocked.forEach(([name, meta]) => {
             context.report({
-              node,
-              messageId: 'in-blocklist',
               data: {
                 name,
                 reason: meta?.message ? `: ${meta.message}` : '',
               },
+              messageId: 'in-blocklist',
+              node,
             })
           })
         }
@@ -105,4 +92,17 @@ export default createRule({
       return parserServices?.defineTemplateBodyVisitor(templateBodyVisitor, scriptVisitor)
     }
   },
+  defaultOptions: [],
+  meta: {
+    docs: {
+      description: 'Utilities in UnoCSS blocklist',
+    },
+    fixable: 'code',
+    messages: {
+      'in-blocklist': '\"{{name}}\" is in blocklist{{reason}}',
+    },
+    schema: [],
+    type: 'problem',
+  },
+  name: 'blocklist',
 }) as any as ESLintUtils.RuleWithMeta<[], ''>

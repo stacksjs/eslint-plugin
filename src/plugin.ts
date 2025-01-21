@@ -5,9 +5,9 @@ import orderAttributify from './rules/order-attributify'
 
 export const plugin = {
   rules: {
-    order,
-    'order-attributify': orderAttributify,
     blocklist,
     'enforce-class-compile': enforceClassCompile,
+    order,
+    'order-attributify': orderAttributify,
   },
 }

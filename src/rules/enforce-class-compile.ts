@@ -5,41 +5,17 @@ import type { AST } from 'vue-eslint-parser'
 import { createRule } from './_'
 
 export default createRule<[{ prefix: string, enableFix: boolean }], 'missing'>({
-  name: 'enforce-class-compile',
-  meta: {
-    type: 'problem',
-    fixable: 'code',
-    docs: {
-      description: 'Enforce class compilation',
-    },
-    messages: {
-      missing: 'prefix: `{{prefix}}` is missing',
-    },
-    schema: [{
-      type: 'object',
-      properties: {
-        prefix: {
-          type: 'string',
-        },
-        enableFix: {
-          type: 'boolean',
-        },
-      },
-      additionalProperties: false,
-    }],
-  },
-  defaultOptions: [{ prefix: ':uno:', enableFix: true }],
   create(context, [mergedOptions]) {
     const CLASS_COMPILE_PREFIX = `${mergedOptions.prefix} `
     const ENABLE_FIX = mergedOptions.enableFix
 
-    function report({ node, fix }: { node: AST.VNode | AST.ESLintNode, fix: ReportFixFunction }) {
+    function report({ fix, node }: { node: AST.VNode | AST.ESLintNode, fix: ReportFixFunction }) {
       context.report({
-        node: node as unknown as TSESTree.Node,
-        loc: node.loc,
-        messageId: 'missing',
         data: { prefix: CLASS_COMPILE_PREFIX.trim() },
         fix: (...args) => ENABLE_FIX ? fix(...args) : null,
+        loc: node.loc,
+        messageId: 'missing',
+        node: node as unknown as TSESTree.Node,
       })
     }
 
@@ -57,21 +33,14 @@ export default createRule<[{ prefix: string, enableFix: boolean }], 'missing'>({
         return
 
       report({
-        node,
         fix(fixer) {
           return fixer.replaceTextRange([node.range[0] + 1, node.range[1] - 1], `${CLASS_COMPILE_PREFIX}${classList}`)
         },
+        node,
       })
     }
 
     const templateBodyVisitor: RuleListener = {
-      [`VAttribute[key.name=class]`](attr: AST.VAttribute) {
-        const valueNode = attr.value
-        if (!valueNode || !valueNode.value)
-          return
-
-        reportClassList(valueNode, valueNode.value)
-      },
       [`VAttribute[key.argument.name=class] VExpressionContainer Literal:not(ConditionalExpression .test Literal):not(Property .value Literal)`](
         literal: AST.ESLintStringLiteral,
       ) {
@@ -79,14 +48,6 @@ export default createRule<[{ prefix: string, enableFix: boolean }], 'missing'>({
           return
 
         reportClassList(literal, literal.value)
-      },
-      [`VAttribute[key.argument.name=class] VExpressionContainer TemplateElement`](
-        templateElement: AST.ESLintTemplateElement,
-      ) {
-        if (!templateElement.value.raw)
-          return
-
-        reportClassList(templateElement, templateElement.value.raw)
       },
       [`VAttribute[key.argument.name=class] VExpressionContainer Property`](
         property: AST.ESLintProperty,
@@ -99,7 +60,6 @@ export default createRule<[{ prefix: string, enableFix: boolean }], 'missing'>({
           return
 
         report({
-          node: property.key,
           fix(fixer) {
             let replacePropertyKeyText = `'${CLASS_COMPILE_PREFIX}${classListString}'`
 
@@ -108,7 +68,23 @@ export default createRule<[{ prefix: string, enableFix: boolean }], 'missing'>({
 
             return fixer.replaceTextRange(property.key.range, replacePropertyKeyText)
           },
+          node: property.key,
         })
+      },
+      [`VAttribute[key.argument.name=class] VExpressionContainer TemplateElement`](
+        templateElement: AST.ESLintTemplateElement,
+      ) {
+        if (!templateElement.value.raw)
+          return
+
+        reportClassList(templateElement, templateElement.value.raw)
+      },
+      [`VAttribute[key.name=class]`](attr: AST.VAttribute) {
+        const valueNode = attr.value
+        if (!valueNode || !valueNode.value)
+          return
+
+        reportClassList(valueNode, valueNode.value)
       },
     }
 
@@ -123,4 +99,28 @@ export default createRule<[{ prefix: string, enableFix: boolean }], 'missing'>({
       return parserServices?.defineTemplateBodyVisitor(templateBodyVisitor, scriptVisitor)
     }
   },
+  defaultOptions: [{ enableFix: true, prefix: ':uno:' }],
+  meta: {
+    docs: {
+      description: 'Enforce class compilation',
+    },
+    fixable: 'code',
+    messages: {
+      missing: 'prefix: `{{prefix}}` is missing',
+    },
+    schema: [{
+      additionalProperties: false,
+      properties: {
+        enableFix: {
+          type: 'boolean',
+        },
+        prefix: {
+          type: 'string',
+        },
+      },
+      type: 'object',
+    }],
+    type: 'problem',
+  },
+  name: 'enforce-class-compile',
 }) as any as ESLintUtils.RuleWithMeta<[], ''>

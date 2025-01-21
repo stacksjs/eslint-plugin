@@ -5,19 +5,6 @@ import { AST_NODES_WITH_QUOTES, CLASS_FIELDS } from '../constants'
 import { createRule, syncAction } from './_'
 
 export default createRule({
-  name: 'order',
-  meta: {
-    type: 'layout',
-    fixable: 'code',
-    docs: {
-      description: 'Order of UnoCSS utilities in class attribute',
-    },
-    messages: {
-      'invalid-order': 'UnoCSS utilities are not ordered',
-    },
-    schema: [],
-  },
-  defaultOptions: [],
   create(context) {
     function checkLiteral(node: TSESTree.Literal) {
       if (typeof node.value !== 'string' || !node.value.trim())
@@ -30,14 +17,14 @@ export default createRule({
       ).trim()
       if (sorted !== input) {
         context.report({
-          node,
-          messageId: 'invalid-order',
           fix(fixer) {
             if (AST_NODES_WITH_QUOTES.includes(node.type))
               return fixer.replaceTextRange([node.range[0] + 1, node.range[1] - 1], sorted)
             else
               return fixer.replaceText(node, sorted)
           },
+          messageId: 'invalid-order',
+          node,
         })
       }
     }
@@ -77,4 +64,17 @@ export default createRule({
       return parserServices?.defineTemplateBodyVisitor(templateBodyVisitor, scriptVisitor)
     }
   },
+  defaultOptions: [],
+  meta: {
+    docs: {
+      description: 'Order of UnoCSS utilities in class attribute',
+    },
+    fixable: 'code',
+    messages: {
+      'invalid-order': 'UnoCSS utilities are not ordered',
+    },
+    schema: [],
+    type: 'layout',
+  },
+  name: 'order',
 }) as any as ESLintUtils.RuleWithMeta<[], ''>

@@ -1,5 +1,5 @@
 import antfu from '@stacksjs/eslint-config'
-import unocss  from '@stacksjs/eslint-plugin'
+import unocss from '@stacksjs/eslint-plugin'
 
 export default antfu(
   {

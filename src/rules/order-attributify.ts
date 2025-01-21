@@ -7,19 +7,6 @@ import { createRule, syncAction } from './_'
 export const IGNORE_ATTRIBUTES = ['style', 'class', 'classname', 'value']
 
 export default createRule({
-  name: 'order-attributify',
-  meta: {
-    type: 'layout',
-    fixable: 'code',
-    docs: {
-      description: 'Order of UnoCSS attributes',
-    },
-    messages: {
-      'invalid-order': 'UnoCSS attributes are not ordered',
-    },
-    schema: [],
-  },
-  defaultOptions: [],
   create(context) {
     const scriptVisitor: RuleListener = {
     }
@@ -38,8 +25,6 @@ export default createRule({
         )
         if (sorted !== input) {
           context.report({
-            node,
-            messageId: 'invalid-order',
             fix(fixer) {
               const codeFull = context.getSourceCode()
               const offset = node.range[0]
@@ -58,6 +43,8 @@ export default createRule({
 
               return fixer.replaceText(node, s.toString())
             },
+            messageId: 'invalid-order',
+            node,
           })
         }
       },
@@ -74,4 +61,17 @@ export default createRule({
       return parserServices?.defineTemplateBodyVisitor(templateBodyVisitor, scriptVisitor)
     }
   },
+  defaultOptions: [],
+  meta: {
+    docs: {
+      description: 'Order of UnoCSS attributes',
+    },
+    fixable: 'code',
+    messages: {
+      'invalid-order': 'UnoCSS attributes are not ordered',
+    },
+    schema: [],
+    type: 'layout',
+  },
+  name: 'order-attributify',
 }) as any as ESLintUtils.RuleWithMeta<[], ''>
