@@ -82,7 +82,7 @@
     "eslint-processor-vue-blocks": "^1.0.0",
     "eslint-vitest-rule-tester": "^1.0.0",
     "unbuild": "3.3.0",
-    "vitest": "^2.1.8",
+    "vitest": "^3.0.3",
     "vue-eslint-parser": "^9.4.3"
   }
 }
