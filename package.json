@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^8.21.0",
     "@typescript-eslint/parser": "^8.21.0",
     "@vitest/eslint-plugin": "^1.1.25",
-    "bumpp": "^9.10.1",
+    "bumpp": "^10.1.0",
     "changelogen": "^0.5.7",
     "eslint-config-flat-gitignore": "^1.0.0",
     "eslint-flat-config-utils": "^1.0.0",
