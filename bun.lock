@@ -25,7 +25,7 @@
         "bumpp": "^10.1.0",
         "changelogen": "^0.5.7",
         "eslint-config-flat-gitignore": "^2.1.0",
-        "eslint-flat-config-utils": "^1.0.0",
+        "eslint-flat-config-utils": "^2.0.1",
         "eslint-merge-processors": "^2.0.0",
         "eslint-plugin-antfu": "^2.7.0",
         "eslint-plugin-command": "^3.1.0",
@@ -1269,7 +1269,7 @@
 
     "eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@2.1.0", "", { "dependencies": { "@eslint/compat": "^1.2.5" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-cJzNJ7L+psWp5mXM7jBX+fjHtBvvh06RBlcweMhKD8jWqQw0G78hOW5tpVALGHGFPsBV+ot2H+pdDGJy6CV8pA=="],
 
-    "eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
+    "eslint-flat-config-utils": ["eslint-flat-config-utils@2.0.1", "", { "dependencies": { "pathe": "^2.0.2" } }, "sha512-brf0eAgQ6JlKj3bKfOTuuI7VcCZvi8ZCD1MMTVoEvS/d38j8cByZViLFALH/36+eqB17ukmfmKq3bWzGvizejA=="],
 
     "eslint-formatting-reporter": ["eslint-formatting-reporter@0.0.0", "", { "dependencies": { "prettier-linter-helpers": "^1.0.0" }, "peerDependencies": { "eslint": ">=8.40.0" } }, "sha512-k9RdyTqxqN/wNYVaTk/ds5B5rA8lgoAmvceYN7bcZMBwU7TuXx5ntewJv81eF3pIL/CiJE+pJZm36llG8yhyyw=="],
 
@@ -2655,6 +2655,8 @@
 
     "@stacksjs/eslint-config/eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
 
+    "@stacksjs/eslint-config/eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
+
     "@stacksjs/eslint-config/eslint-merge-processors": ["eslint-merge-processors@1.0.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-4GybyHmhXtT7/W8RAouQzNM0791sYasJCTYHIAYjuiJvbNFY0jMKkoESREhX+mjX37dxiN6v4EqhZ1nc0tJF7A=="],
 
     "@stacksjs/eslint-config/eslint-plugin-command": ["eslint-plugin-command@2.1.0", "", { "dependencies": { "@es-joy/jsdoccomment": "^0.50.0" }, "peerDependencies": { "eslint": "*" } }, "sha512-S3gvDSCRHLdRG7NYaevLvGA0g/txOju7NEB2di7SE80NtbCwsvpi/fft045YuTZpOzqCRUfuye39raldmpXXYQ=="],
@@ -2749,7 +2751,7 @@
 
     "eslint-compat-utils/semver": ["semver@7.6.3", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A=="],
 
-    "eslint-flat-config-utils/pathe": ["pathe@2.0.2", "", {}, "sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w=="],
+    "eslint-flat-config-utils/pathe": ["pathe@2.0.3", "", {}, "sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w=="],
 
     "eslint-import-resolver-node/debug": ["debug@3.2.7", "", { "dependencies": { "ms": "^2.1.1" } }, "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ=="],
 
@@ -3009,6 +3011,8 @@
 
     "@stacksjs/dns/@stacksjs/path/@stacksjs/validation": ["@stacksjs/validation@0.67.0", "", { "dependencies": { "@stacksjs/strings": "0.67.0", "@stacksjs/types": "0.67.0", "@vinejs/vine": "^2.1.0" } }, "sha512-W+wOze8vcMCq5z+xEj7qDmdUiv7pnSfnt1yKZJEDYocCwSOZseDKK56bik6c5ETA78sy6EZEtd68xFS0Lei3wg=="],
 
+    "@stacksjs/eslint-config/eslint-flat-config-utils/pathe": ["pathe@2.0.2", "", {}, "sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w=="],
+
     "@stacksjs/eslint-config/eslint-plugin-unicorn/indent-string": ["indent-string@4.0.0", "", {}, "sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg=="],
 
     "@stacksjs/eslint-config/eslint-plugin-unicorn/is-builtin-module": ["is-builtin-module@3.2.1", "", { "dependencies": { "builtin-modules": "^3.3.0" } }, "sha512-BSLE3HnV2syZ0FK0iMA/yUGplUeMmNz4AW5fnTunbCIqZi4vG3WjJT9FHMy5D69xmAYBHXQhJdALdpwVxV501A=="],
@@ -3020,6 +3024,8 @@
     "@stacksjs/eslint-config/eslint-plugin-unicorn/strip-indent": ["strip-indent@3.0.0", "", { "dependencies": { "min-indent": "^1.0.0" } }, "sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ=="],
 
     "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
+
+    "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
 
     "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-merge-processors": ["eslint-merge-processors@1.0.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-4GybyHmhXtT7/W8RAouQzNM0791sYasJCTYHIAYjuiJvbNFY0jMKkoESREhX+mjX37dxiN6v4EqhZ1nc0tJF7A=="],
 
@@ -3290,6 +3296,8 @@
     "@stacksjs/eslint-config/eslint-plugin-unicorn/is-builtin-module/builtin-modules": ["builtin-modules@3.3.0", "", {}, "sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw=="],
 
     "@stacksjs/eslint-config/eslint-plugin-unicorn/regjsparser/jsesc": ["jsesc@0.5.0", "", { "bin": { "jsesc": "bin/jsesc" } }, "sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA=="],
+
+    "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-flat-config-utils/pathe": ["pathe@2.0.2", "", {}, "sha512-15Ztpk+nov8DR524R4BF7uEuzESgzUEAV4Ah7CUMNGXdE5ELuvxElxGXndBl32vMSsWa1jpNf22Z+Er3sKwq+w=="],
 
     "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-plugin-unicorn/indent-string": ["indent-string@4.0.0", "", {}, "sha512-EdDDZu4A2OyIK7Lr/2zG+w5jmbuk1DVBnEwREQvBzspBJkCEbRa8GxU1lghYcaGJCnRWibjDXlq779X1/y5xwg=="],
 
