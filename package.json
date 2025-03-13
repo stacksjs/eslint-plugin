@@ -61,7 +61,7 @@
     "@vitest/eslint-plugin": "^1.1.25",
     "bumpp": "^9.10.1",
     "changelogen": "^0.5.7",
-    "eslint-config-flat-gitignore": "^1.0.0",
+    "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-flat-config-utils": "^1.0.0",
     "eslint-merge-processors": "^2.0.0",
     "eslint-plugin-antfu": "^2.7.0",
