@@ -24,7 +24,7 @@
         "@vitest/eslint-plugin": "^1.1.25",
         "bumpp": "^10.1.0",
         "changelogen": "^0.5.7",
-        "eslint-config-flat-gitignore": "^1.0.0",
+        "eslint-config-flat-gitignore": "^2.1.0",
         "eslint-flat-config-utils": "^1.0.0",
         "eslint-merge-processors": "^2.0.0",
         "eslint-plugin-antfu": "^2.7.0",
@@ -1267,7 +1267,7 @@
 
     "eslint-compat-utils": ["eslint-compat-utils@0.6.4", "", { "dependencies": { "semver": "^7.5.4" }, "peerDependencies": { "eslint": ">=6.0.0" } }, "sha512-/u+GQt8NMfXO8w17QendT4gvO5acfxQsAKirAt0LVxDnr2N8YLCVbregaNc/Yhp7NM128DwCaRvr8PLDfeNkQw=="],
 
-    "eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
+    "eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@2.1.0", "", { "dependencies": { "@eslint/compat": "^1.2.5" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-cJzNJ7L+psWp5mXM7jBX+fjHtBvvh06RBlcweMhKD8jWqQw0G78hOW5tpVALGHGFPsBV+ot2H+pdDGJy6CV8pA=="],
 
     "eslint-flat-config-utils": ["eslint-flat-config-utils@1.0.0", "", { "dependencies": { "pathe": "^2.0.0" } }, "sha512-tmzcXeCsa24/u3glyw1Mo7KfC/r9a5Vsu1nPCkX7uefD7C5Z4x922Q2KP/drhTLbOI5lcFHYpfXjKhqqnUWObw=="],
 
@@ -2653,6 +2653,8 @@
 
     "@stacksjs/env/@stacksjs/validation": ["@stacksjs/validation@0.67.0", "", { "dependencies": { "@stacksjs/strings": "0.67.0", "@stacksjs/types": "0.67.0", "@vinejs/vine": "^2.1.0" } }, "sha512-W+wOze8vcMCq5z+xEj7qDmdUiv7pnSfnt1yKZJEDYocCwSOZseDKK56bik6c5ETA78sy6EZEtd68xFS0Lei3wg=="],
 
+    "@stacksjs/eslint-config/eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
+
     "@stacksjs/eslint-config/eslint-merge-processors": ["eslint-merge-processors@1.0.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-4GybyHmhXtT7/W8RAouQzNM0791sYasJCTYHIAYjuiJvbNFY0jMKkoESREhX+mjX37dxiN6v4EqhZ1nc0tJF7A=="],
 
     "@stacksjs/eslint-config/eslint-plugin-unicorn": ["eslint-plugin-unicorn@56.0.1", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.24.7", "@eslint-community/eslint-utils": "^4.4.0", "ci-info": "^4.0.0", "clean-regexp": "^1.0.0", "core-js-compat": "^3.38.1", "esquery": "^1.6.0", "globals": "^15.9.0", "indent-string": "^4.0.0", "is-builtin-module": "^3.2.1", "jsesc": "^3.0.2", "pluralize": "^8.0.0", "read-pkg-up": "^7.0.1", "regexp-tree": "^0.1.27", "regjsparser": "^0.10.0", "semver": "^7.6.3", "strip-indent": "^3.0.0" }, "peerDependencies": { "eslint": ">=8.56.0" } }, "sha512-FwVV0Uwf8XPfVnKSGpMg7NtlZh0G0gBarCaFcMUOoqPxXryxdYxTRRv4kH6B9TFCVIrjRXG+emcxIk2ayZilog=="],
@@ -3014,6 +3016,8 @@
     "@stacksjs/eslint-config/eslint-plugin-unicorn/semver": ["semver@7.6.3", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A=="],
 
     "@stacksjs/eslint-config/eslint-plugin-unicorn/strip-indent": ["strip-indent@3.0.0", "", { "dependencies": { "min-indent": "^1.0.0" } }, "sha512-laJTa3Jb+VQpaC6DseHhF7dXVqHTfJPCRDaEbid/drOhgitgYku/letMUqOXFoWV0zIIUbjpdH2t+tYj4bQMRQ=="],
+
+    "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-config-flat-gitignore": ["eslint-config-flat-gitignore@1.0.0", "", { "dependencies": { "@eslint/compat": "^1.2.4", "find-up-simple": "^1.0.0" }, "peerDependencies": { "eslint": "^9.5.0" } }, "sha512-EWpSLrAP80IdcYK5sIhq/qAY0pmUdBnbzqzpE3QAn6H6wLBN26cMRoMNU9Di8upTzUSL6TXeYRxWhTYuz8+UQA=="],
 
     "@stacksjs/eslint-plugin/@stacksjs/eslint-config/eslint-merge-processors": ["eslint-merge-processors@1.0.0", "", { "peerDependencies": { "eslint": "*" } }, "sha512-4GybyHmhXtT7/W8RAouQzNM0791sYasJCTYHIAYjuiJvbNFY0jMKkoESREhX+mjX37dxiN6v4EqhZ1nc0tJF7A=="],
 
