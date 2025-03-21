@@ -39,7 +39,7 @@
     "release": "bun run changelog && bunx bumpp package.json --all"
   },
   "dependencies": {
-    "@stacksjs/eslint-config": "^4.8.2-beta.1",
+    "@stacksjs/eslint-config": "^4.10.2-beta.1",
     "@typescript-eslint/utils": "^8.27.0",
     "@unocss/config": "66.0.0",
     "@unocss/core": "66.0.0",
@@ -50,7 +50,7 @@
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@eslint/markdown": "^6.3.0",
-    "@stacksjs/path": "^0.70.2",
+    "@stacksjs/path": "^0.70.3",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@types/bun": "^1.2.5",
     "@typescript-eslint/eslint-plugin": "^8.27.0",
