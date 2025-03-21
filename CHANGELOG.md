@@ -1,4 +1,16 @@
 
+## v0.2.3...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.2.3...main)
+
+### 🏡 Chore
+
+- Use latest ([f885280](https://github.com/stacksjs/eslint-plugin/commit/f885280))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
+
 ## v0.2.2...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.2.2...main)
