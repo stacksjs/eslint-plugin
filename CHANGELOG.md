@@ -1,4 +1,21 @@
 
+## v0.1.5...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.5...main)
+
+### 🏡 Chore
+
+- Update vscode settings ([93e3e6e](https://github.com/stacksjs/eslint-plugin/commit/93e3e6e))
+- Add github funding info ([2930a86](https://github.com/stacksjs/eslint-plugin/commit/2930a86))
+- Update bun version ([200b853](https://github.com/stacksjs/eslint-plugin/commit/200b853))
+- Update deps ([dcdd9a9](https://github.com/stacksjs/eslint-plugin/commit/dcdd9a9))
+- Dont emit cjs ([59119d1](https://github.com/stacksjs/eslint-plugin/commit/59119d1))
+- Minor updates ([3143284](https://github.com/stacksjs/eslint-plugin/commit/3143284))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](http://github.com/chrisbbreuer))
+
 ## v0.1.4...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.4...main)
