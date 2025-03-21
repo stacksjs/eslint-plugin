@@ -1,4 +1,16 @@
 
+## v0.2.2...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.2.2...main)
+
+### 🏡 Chore
+
+- Update deps ([ed4e4cf](https://github.com/stacksjs/eslint-plugin/commit/ed4e4cf))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
+
 ## v0.2.1...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.2.1...main)
