@@ -15,7 +15,7 @@
       "devDependencies": {
         "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
         "@eslint/markdown": "^6.3.0",
-        "@stacksjs/path": "^0.69.5",
+        "@stacksjs/path": "^0.70.1",
         "@stylistic/eslint-plugin": "^4.2.0",
         "@types/bun": "^1.2.5",
         "@typescript-eslint/eslint-plugin": "^8.27.0",
@@ -246,7 +246,7 @@
 
     "@stacksjs/eslint-plugin": ["@stacksjs/eslint-plugin@0.1.5", "", { "dependencies": { "@stacksjs/eslint-config": "^3.15.1-beta.1", "@typescript-eslint/utils": "^8.21.0", "@unocss/config": "65.4.2", "@unocss/core": "65.4.2", "magic-string": "^0.30.17", "synckit": "^0.9.2", "unocss": "^65.4.2" } }, "sha512-MeJVcuvWccAzc8cR7pmgDeUsK+Lc99bnTp9bt32Cod5/wrVWwaPB+JnYIxcjef9kqwqkG7Xax2h1vClI/XC3nA=="],
 
-    "@stacksjs/path": ["@stacksjs/path@0.69.5", "", {}, "sha512-z0ZYnJKQOjyNHqmSqSU9D2UycdiCz+JDOpd581Ab8h/nIU/jGhPD/lKyMRbDl88evF+0/OsLRaaVOe+Rm7jceg=="],
+    "@stacksjs/path": ["@stacksjs/path@0.70.1", "", {}, "sha512-Y9UBIgrrR5rmHrLQ+nORgWAJFVcCFdqYjHIq2lNhi1LFajKgkyYb0vdE8z4lJxhKa9iCTnOQsMdpe3V9GEBfGQ=="],
 
     "@stylistic/eslint-plugin": ["@stylistic/eslint-plugin@4.2.0", "", { "dependencies": { "@typescript-eslint/utils": "^8.23.0", "eslint-visitor-keys": "^4.2.0", "espree": "^10.3.0", "estraverse": "^5.3.0", "picomatch": "^4.0.2" }, "peerDependencies": { "eslint": ">=9.0.0" } }, "sha512-8hXezgz7jexGHdo5WN6JBEIPHCSFyyU4vgbxevu4YLVS5vl+sxqAAGyXSzfNDyR6xMNSH5H1x67nsXcYMOHtZA=="],
 
