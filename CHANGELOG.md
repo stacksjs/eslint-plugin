@@ -1,4 +1,16 @@
 
+## v0.2.0...main
+
+[compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.2.0...main)
+
+### 🏡 Chore
+
+- Update lockfile ([5c89d61](https://github.com/stacksjs/eslint-plugin/commit/5c89d61))
+
+### ❤️ Contributors
+
+- Chris ([@chrisbbreuer](https://github.com/chrisbbreuer))
+
 ## v0.1.5...main
 
 [compare changes](https://github.com/stacksjs/eslint-plugin/compare/v0.1.5...main)
