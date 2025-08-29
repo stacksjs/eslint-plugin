@@ -54,7 +54,7 @@
     "@eslint/markdown": "^6.4.0",
     "@stacksjs/bumpx": "^0.1.17",
     "@stacksjs/gitlint": "^0.1.5",
-    "@stacksjs/logsmith": "^0.1.8",
+    "@stacksjs/logsmith": "^0.1.9",
     "@stacksjs/path": "latest0.70.23",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@types/bun": "^1.2.21",
