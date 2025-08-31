@@ -43,11 +43,11 @@
   "dependencies": {
     "@stacksjs/eslint-config": "^4.10.2-beta.3",
     "@typescript-eslint/utils": "^8.41.0",
-    "@unocss/config": "66.4.2",
-    "@unocss/core": "66.4.2",
+    "@unocss/config": "66.5.0",
+    "@unocss/core": "66.5.0",
     "magic-string": "^0.30.18",
     "synckit": "^0.11.11",
-    "unocss": "^66.4.2"
+    "unocss": "^66.5.0"
   },
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
