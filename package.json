@@ -61,7 +61,7 @@
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
     "@vitest/eslint-plugin": "^1.1.44",
-    "buddy-bot": "^0.8.9",
+    "buddy-bot": "^0.9.4",
     "bun-git-hooks": "^0.2.19",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-flat-config-utils": "^2.0.1",
