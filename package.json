@@ -52,7 +52,7 @@
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
     "@eslint/markdown": "^6.4.0",
-    "@stacksjs/bumpx": "^0.1.75",
+    "@stacksjs/bumpx": "^0.1.78",
     "@stacksjs/gitlint": "^0.1.5",
     "@stacksjs/logsmith": "^0.1.18",
     "@stacksjs/path": "latest0.70.23",
