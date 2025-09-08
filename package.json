@@ -45,7 +45,7 @@
     "@typescript-eslint/utils": "^8.42.0",
     "@unocss/config": "66.5.1",
     "@unocss/core": "66.5.1",
-    "magic-string": "^0.30.18",
+    "magic-string": "^0.30.19",
     "synckit": "^0.11.11",
     "unocss": "^66.5.1"
   },
