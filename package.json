@@ -47,7 +47,7 @@
     "@unocss/core": "66.1.1",
     "magic-string": "^0.30.17",
     "synckit": "^0.11.4",
-    "unocss": "^66.1.1"
+    "unocss": "^66.5.10-beta.1"
   },
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.5.0",
