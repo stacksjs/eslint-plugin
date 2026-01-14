@@ -46,7 +46,7 @@
     "@unocss/config": "66.5.12",
     "@unocss/core": "66.5.12",
     "magic-string": "^0.30.21",
-    "synckit": "^0.11.11",
+    "synckit": "^0.11.12",
     "unocss": "^66.5.12"
   },
   "devDependencies": {
